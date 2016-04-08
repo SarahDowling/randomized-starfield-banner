@@ -1,12 +1,3 @@
-html {
-  box-sizing: border-box;
-  font: normal 100%/1.5 Roboto, sans-serif;
-}
-
-*, *::before, *::after {
-  box-sizing: inherit;
-}
-
 body {
   margin: 0;
 }
@@ -15,7 +6,6 @@ body {
   overflow: hidden;
   padding-top: 33.3333%;
   position: relative;
-
   background-color: darkslateblue;
 }
 
@@ -25,7 +15,6 @@ body {
   position: absolute;
   width: 100%;
   z-index: 1000;
-
   color: #fff;
   text-align: center;
   text-shadow: 0 1px 7px rgba(0, 0, 0, 0.9);
@@ -33,13 +22,11 @@ body {
 
 .banner-content h2 {
   margin: 0;
-
   font-size: 3rem;
 }
 
 .banner-content p {
   margin: 0;
-
   font-size: 1.5rem;
   font-style: italic;
 }
@@ -50,6 +37,7 @@ body {
   position: absolute;
   top: 0;
   width: 30px;
-
   background: url("../images/star.svg") no-repeat center center / contain transparent;
+  animation: stars 2.5s infinite alternate;
+  transform-origin: center center;
 }
